@@ -14,7 +14,7 @@ CITY_DATA = { 'chicago' : 'chicago.csv',
 Months = {'jan','feb','mar','apr','may','jun','july','aug','sep','oct','nov','dec','all'}
 Days = {'sunday','monday','tuesday','wednesday','thursday','friday','saturday','all'}
    
-def get_filters():
+def filters():
     """
     Asks user to specify a city, month, and day to analyze.
 
@@ -75,7 +75,7 @@ def load_data(city, month, day):
     return df
 
 
-def time_stats(df):
+def stats_1(df):
     """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
@@ -108,7 +108,7 @@ def time_stats(df):
     print('-'*40)
 
 
-def station_stats(df):
+def stats_2(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
@@ -138,7 +138,7 @@ def station_stats(df):
     print('-'*40)
 
 
-def trip_duration_stats(df):
+def stats_3(df):
     """Displays statistics on the total and average trip duration."""
 
     print('\nCalculating Trip Duration...\n')
@@ -167,7 +167,7 @@ def trip_duration_stats(df):
     print('-'*40)
 
 
-def user_stats(df):
+def stats_4(df):
     """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
